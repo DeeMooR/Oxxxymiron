@@ -18,28 +18,46 @@
 				<div class="menu_body">
 					<a href=""><img src="img/logo.png" alt="Logo"></a>
 					<nav class="menu_list">
-						<a href="#biography" class="menu_link">BIOGRAPHY</a>
-						<a href="" class="menu_link">ALBOMS</a>
-						<a href="" class="menu_link">VIDEOS</a>
-						<a href="" class="menu_link">MUSIC</a>
-						<a href="" class="menu_link">SHOP</a>
+						<a href="#biography" class="menu_link lng01">БИОГРАФИЯ</a>
+						<a href="#albums" class="menu_link lng02">АЛЬБОМЫ</a>
+						<a href="#popular" class="menu_link lng03">МУЗЫКА</a>
+						<a href="#video" class="menu_link lng04">КЛИПЫ</a>
+						<a href="" class="menu_link lng05">МАГАЗИН</a>
 					</nav>
+					<!--
 					<div class="header_language">
 						<button class="language_ru">RU</button>
 						<div class="language_vertical">|</div>
 						<button class="language_eng">ENG</button>
 					</div>
+					-->
+
+
+					<div class="header_language">
+						<input id="switch-ru" type="radio" name="en-ru"/>
+						<label class="btn-en-ru" for="switch-ru" id="ru">
+							<span>RU  </span>
+						</label>
+
+						<div class="en-ru"><span>|</span></div>
+
+						<input id="switch-en" type="radio" name="en-ru"/>
+						<label class="btn-en-ru" for="switch-en" id="en">
+							<span>ENG</span>
+						</label>
+					</div>
+
 
 					<input id="menu-toggle-nav" type="checkbox" />
 			      <label class="menu-nav" for="menu-toggle-nav">
 			        <span></span>
 			      </label>
 			      <ul class="menu-box">
-					    <li><a href="#biography" class="menu-item menu_link">BIOGRAPHY</a></li>
-					    <li><a href="" class="menu-item menu_link">ALBOMS</a></li>
-					    <li><a href="" class="menu-item menu_link">VIDEOS</a></li>
-					    <li><a href="" class="menu-item menu_link">MUSIC</a></li>
-					    <li><a href="" class="menu-item menu_link">SHOP</a></li>
+					    <li><a href="#biography" class="menu-item menu_link lng01">БИОГРАФИЯ</a></li>
+					    <li><a href="#albums" class="menu-item menu_link lng02">АЛЬБОМЫ</a></li>
+					    <li><a href="#popular" class="menu-item menu_link lng03">МУЗЫКА</a></li>
+					    <li><a href="#video" class="menu-item menu_link lng04">КЛИПЫ</a></li>
+					    <li><a href="" class="menu-item menu_link lng05">МАГАЗИН</a></li>
 			      </ul>
 				</div>
 			</div>
@@ -68,14 +86,14 @@
 
 			<section id="biography" class="biography">
 				<div class="biography_container">
-					<div class="biography_name">BIOGRAPHY</div>
+					<div class="container_name lng01">БИОГРАФИЯ</div>
 					<div class="bio_block bio_b1">
 						<div class="bio_photo">
 							<img class="bio_p1" src="img/ver2.jpg" alt="Childhood">
 						</div>
 						<div class="bio_info bio_i1">
-							<div class="bio_title">    Childhood</div>
-							<div class="bio_text">
+							<div class="bio_title lng08">    Детство</div>
+							<div class="bio_text lng14">
 								Мирон родился 31 января 1985 года в Ленинграде. Отец был профессором физики, а мать – библиотекарем. После 4 лет обучения в ленинградской школе их семья перебирается в немецкий городок Руттеншайд.
 								<br>
 								<br>
@@ -101,8 +119,8 @@
 							<img class="bio_p2" src="img/ver1.jpg" alt="Creativity">
 						</div>
 						<div class="bio_info bio_i2">
-							<div class="bio_title">Creativity</div>
-							<div class="bio_text">
+							<div class="bio_title lng09">Творчество</div>
+							<div class="bio_text lng15">
 								В 2008 году Мирон начал выкладывать в интернет свои демо-записи. К этому времени он взял псевдоним Oxxxymiron, что являлось отсылкой, во-первых, к его настоящему имени, во-вторых, к литературному термину «оксюморон», а утроенное «x» отсылало к щедрому использованию нецензурной лексики в его треках.
 								<br>
 								<br>
@@ -130,10 +148,11 @@
 					<div class="bio_block bio_b3">
 						<div class="bio_photo">
 							<img class="bio_p3" src="img/gor2.jpg" alt="Battles">
+							<div class="title_hidden">Battles</div>
 						</div>
 						<div class="bio_info bio_i3">
-							<div class="bio_title">    Battles</div>
-							<div class="bio_text">
+							<div class="bio_title lng10">    Батлы</div>
+							<div class="bio_text lng16">
 								На Versus-батлах его противниками становились рэперы Дуня, Крип-а-Крип, Johnnyboy – и каждый раз он одерживал безоговорочную победу, как отзывались зрители, «flawless victory».
 								<br>
 								<br>
@@ -151,10 +170,11 @@
 					<div class="bio_block bio_b4">
 						<div class="bio_photo">
 							<img class="bio_p4" src="img/gor1.jpg" alt="Concerts">
+							<div class="title_hidden">Concerts</div>
 						</div>
 						<div class="bio_info bio_i4">
-							<div class="bio_title">Concerts</div>
-							<div class="bio_text">
+							<div class="bio_title lng11">Концерты</div>
+							<div class="bio_text lng17">
 								В 2016 году Oxxxymiron провел два больших тура: «Takeover tour» и «Back to Europe Tour».
 								<br>
 								<br>
@@ -165,7 +185,7 @@
 								<br>
 								<br>
 								В начале 2022 года должны были пройти выступления Оксимирона в Москве и Петербурге. Но из-за вооруженного конфликта на Украине он отменил все концерты. 
-								Весной провёл 3 концерта «RUSSIANS AGAINT WAR» в Стамбуле, Лондоне и Берлине. 
+								Весной провёл 3 концерта «RUSSIANS AGAINT WAR» в Стамбуле, Лондоне и Берлине.
 							</div>
 						</div>
 					</div>
@@ -173,11 +193,12 @@
 					<div class="bio_block bio_b5">
 						<div class="bio_photo">
 							<img class="bio_p5" src="img/gor4.jpg" alt="Politics">
+							<div class="title_hidden">Politics</div>
 						</div>
 						<div class="bio_info bio_i5">
-							<div class="bio_title">    Politics</div>
-							<div class="bio_text">
-								Оксимирон ведет активную оппозиционную деятельность. В июле-августе 2019 года Оксимирон публично поддержал серию протестов на волне недопущения независимых кандидатов на выборы в Мосгордуму.
+							<div class="bio_title lng12">    Политика</div>
+							<div class="bio_text lng18">
+								Оксимирон ведет активную оппозиционную деятельность. В июле-августе 2019 года рэпер публично поддержал серию протестов на волне недопущения независимых кандидатов на выборы в Мосгордуму.
 								<br>
 								<br>
 								В 2022 году высказывал своё несогласие с властью в России и выходил на митинги против войны в Украине.
@@ -193,24 +214,173 @@
 							<img class="bio_p6" src="img/gor3.png" alt="Awards">
 						</div>
 						<div class="bio_info bio_i6">
-							<div class="bio_title">Awards</div>
-							<div class="bio_text">
+							<div class="bio_title lng13">Награды</div>
+							<div class="bio_text lng19">
 								Обладатель премии «Человек года GQ 2012» в номинации «Открытие года».
 								<br>
 								<br>
 								Победитель в общественных голосованиях Hip-hop.ru Award:
-								o	2009 год - «Открытие года», «Лучший трек демо-музыки», «Лучший МС 14-го независимого баттла», «Прорыв баттла», «Лучший трек баттла», «Лучший спарринг баттла»
-								o	2011 год - «Лучший альбом», «Лучший трек демо-музыки»
-								o	2012 год - «Лучшее видео», «Исполнитель года», «Событие года», «Лучший mixtape»
-								o	2013 год - «Лучшее видео», «Исполнитель года», «Лучший mixtape»
+								<br>2009 год - «Открытие года», «Лучший трек демо-музыки», «Лучший МС 14-го независимого баттла», «Прорыв баттла», «Лучший трек баттла», «Лучший спарринг баттла»
+								<br>2011 год - «Лучший альбом», «Лучший трек демо-музыки»
+								<br>2012 год - «Лучшее видео», «Исполнитель года», «Событие года», «Лучший mixtape»
+								<br>2013 год - «Лучшее видео», «Исполнитель года», «Лучший mixtape»
 								<br>
 								<br>
 								Победитель в общественных голосованиях портала The Flow:
-								o	2015 год - «Лучший отечественный альбом», «лучший русскоязычный трек», «лучший русскоязычный артист» 
-								o	2021 год - «Альбом года», «трек года», «артист года»
+								<br>2015 год - «Лучший отечественный альбом», «лучший русскоязычный трек», «лучший русскоязычный артист» 
+								<br>2021 год - «Альбом года», «трек года», «артист года»
+								<br>
+								<br>
 								Премия «Чартова Дюжина» (2018) в номинации «Лучший дуэт» (вместе с группой Би-2) и др.
 							</div>
 						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="albums" class="albums">
+				<div class="albums_container">
+					<div class="container_name lng02">АЛЬБОМЫ</div>
+					<div class="flex_albums">
+						<div class="albums_item">
+							<img src="img/Albums/Красота_и_уродство.jpg" alt="Красота и Уродство">
+							<div class="albums_title">Красота и Уродство</div>
+						</div>
+						<div class="albums_item">
+							<img src="img/Albums/Смутное_время.jpg" alt="miXXXtape III: Смутное время">
+							<div class="albums_title">miXXXtape III:<br>Смутное время</div>
+						</div>
+						<div class="albums_item">
+							<img src="img/Albums/Горгород.jpg" alt="ГОРГОРОД">
+							<div class="albums_title">ГОРГОРОД</div>
+						</div>
+						<div class="albums_item">
+							<img src="img/Albums/Долгий_путь_домой.png" alt="miXXXtape II: Долгий путь домой">
+							<div class="albums_title">miXXXtape II:<br>Долгий путь домой</div>
+						</div>
+						<div class="albums_item">
+							<img src="img/Albums/Вечный_жид.png" alt="Вечный жид">
+							<div class="albums_title">Вечный жид</div>
+						</div>
+						<div class="albums_item">
+							<img src="img/Albums/miXXXtape I.jpg" alt="miXXXtape I">
+							<div class="albums_title">miXXXtape I</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="singles" class="singles">
+				<div class="singles_container">
+					<div class="container_name lng06">CИНГЛЫ</div>
+					<div class="flex_singles">
+						<button class="svg_circle svg_circle1280 svg_circle_left" id="left">
+				         <div class="nav-img"></div>    
+				      </button> 
+
+						<div class="singles_block">
+							<div class="singles_item">
+								<img class="singles_img0" src="" alt="">
+								<div class="singles_title singles_title0"></div>
+							</div>
+							<div class="singles_item">
+								<img class="singles_img1" src="" alt="">
+								<div class="singles_title singles_title1"></div>
+							</div>
+							<div class="singles_item">
+								<img class="singles_img2" src="" alt="">
+								<div class="singles_title singles_title2"></div>
+							</div>
+							<div class="singles_item">
+								<img class="singles_img3" src="" alt="">
+								<div class="singles_title singles_title3"></div>
+							</div>
+							<div class="singles_item">
+								<img class="singles_img4" src="" alt="">
+								<div class="singles_title singles_title4"></div>
+							</div>
+						</div>
+
+						<button class="svg_circle svg_circle1280 svg_circle_right" id="right">
+				         <div class="nav-img"></div>    
+				      </button> 
+					</div>
+				</div>
+			</section>
+
+
+			<section id="popular" class="popular">
+				<div class="popular_container">
+					<div class="container_name lng07">ТРЭКИ</div>
+					<div class="popular_block">
+						<div class="popular_item" id="m1">
+							<div class="popular_item_photo">
+								<img src="img/Popular Tracks/Пора возвращаться домой.png" alt="Пора возвращаться домой">
+							</div>
+							<div class="popular_item_name">Пора возвращаться домой</div>
+							<div class="popular_item_album">Горизонт событий</div>
+							<div class="popular_item_time">4:48</div>
+						</div>
+						<div class="popular_horizon"></div>
+						<div class="popular_item" id="m2">
+							<div class="popular_item_photo">
+								<img src="img/Popular Tracks/Где нас нет.png" alt="Где нас нет">
+							</div>
+							<div class="popular_item_name">Где нас нет</div>
+							<div class="popular_item_album">ГОРГОРОД</div>
+							<div class="popular_item_time">4:25</div>
+						</div>
+						<div class="popular_horizon"></div>
+						<div class="popular_item" id="m4">
+							<div class="popular_item_photo">
+								<img src="img/Popular Tracks/Мы все умрём.jpg" alt="Мы все умрём">
+							</div>
+							<div class="popular_item_name">Мы все умрём</div>
+							<div class="popular_item_album">Красота и Уродство</div>
+							<div class="popular_item_time">2:46</div>
+						</div>
+						<div class="popular_horizon"></div>
+						<div class="popular_item" id="m5">
+							<div class="popular_item_photo">
+								<img src="img/Popular Tracks/Город под подошвой.png" alt="Город под подошвой">
+							</div>
+							<div class="popular_item_name">Город под подошвой</div>
+							<div class="popular_item_album">Город под подошвой</div>
+							<div class="popular_item_time">4:06</div>
+						</div>
+						<div class="popular_horizon"></div>
+						<div class="popular_item" id="m3">
+							<div class="popular_item_photo">
+								<img src="img/Popular Tracks/Fata Morgana.jpg" alt="Fata Morgana">
+							</div>
+							<div class="popular_item_name">Fata Morgana</div>
+							<div class="popular_item_album">Fata Morgana</div>
+							<div class="popular_item_time">3:03</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="video" class="video">
+				<div class="video_container">
+					<div class="container_name lng04">КЛИПЫ</div>
+					<div class="video_block">
+						<a href="https://youtu.be/XBleNfmkScA" class="video_item" target="blank">
+							<img class="video_img" src="img/Video/Город под подошвой.jpg" alt="Город под подошвой">
+						</a>
+						<a href="https://youtu.be/aPfd6-4F1xU" class="video_item" target="blank">
+							<img class="video_img" src="img/Video/Организация.jpg" alt="Организация">
+						</a>
+						<a href="https://youtu.be/q92DWs1MwRA" class="video_item" target="blank">
+							<img class="video_img" src="img/Video/Кто убил Марка.jpg" alt="Кто убил Марка">
+						</a>
+						<a href="https://youtu.be/d8e9sw6_oec" class="video_item" target="blank">
+							<img class="video_img" src="img/Video/Fata Morgana.jpg" alt="Fata Morgana">
+						</a>
 					</div>
 				</div>
 			</section>
