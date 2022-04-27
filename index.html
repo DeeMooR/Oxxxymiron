@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Comfortaa:wght@300;400;600;700&family=PT+Sans:wght@400;700&family=Raleway:wght@700;800&family=Roboto+Mono:wght@100;200&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/style.css">
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 </head>
@@ -16,21 +17,13 @@
 		<header class="header">
 			<div class="header_container">
 				<div class="menu_body">
-					<a href=""><img src="img/logo.png" alt="Logo"></a>
+					<a href="#up"><img src="img/logo.png" alt="Logo"></a>
 					<nav class="menu_list">
 						<a href="#biography" class="menu_link lng01">БИОГРАФИЯ</a>
 						<a href="#albums" class="menu_link lng02">АЛЬБОМЫ</a>
 						<a href="#popular" class="menu_link lng03">МУЗЫКА</a>
 						<a href="#video" class="menu_link lng04">КЛИПЫ</a>
-						<a href="" class="menu_link lng05">МАГАЗИН</a>
 					</nav>
-					<!--
-					<div class="header_language">
-						<button class="language_ru">RU</button>
-						<div class="language_vertical">|</div>
-						<button class="language_eng">ENG</button>
-					</div>
-					-->
 
 
 					<div class="header_language">
@@ -57,21 +50,20 @@
 					    <li><a href="#albums" class="menu-item menu_link lng02">АЛЬБОМЫ</a></li>
 					    <li><a href="#popular" class="menu-item menu_link lng03">МУЗЫКА</a></li>
 					    <li><a href="#video" class="menu-item menu_link lng04">КЛИПЫ</a></li>
-					    <li><a href="" class="menu-item menu_link lng05">МАГАЗИН</a></li>
 			      </ul>
 				</div>
 			</div>
 		</header>
 
 		<main>
-			<section class="photo">
+			<section id="up" class="photo">
 				<div class="photo_container">
 					<div class="photo_content">
 						<div class="photo_block-text block-text">
 							<h1 class="block-text_title">
 								OXXXYMIRON
 							</h1>
-							<div class="block-text_text">
+							<div class="block-text_text lng20">
 								Мирон Янович Фёдоров
 							</div>
 						</div>
@@ -148,7 +140,6 @@
 					<div class="bio_block bio_b3">
 						<div class="bio_photo">
 							<img class="bio_p3" src="img/gor2.jpg" alt="Battles">
-							<div class="title_hidden">Battles</div>
 						</div>
 						<div class="bio_info bio_i3">
 							<div class="bio_title lng10">    Батлы</div>
@@ -170,7 +161,6 @@
 					<div class="bio_block bio_b4">
 						<div class="bio_photo">
 							<img class="bio_p4" src="img/gor1.jpg" alt="Concerts">
-							<div class="title_hidden">Concerts</div>
 						</div>
 						<div class="bio_info bio_i4">
 							<div class="bio_title lng11">Концерты</div>
@@ -193,7 +183,6 @@
 					<div class="bio_block bio_b5">
 						<div class="bio_photo">
 							<img class="bio_p5" src="img/gor4.jpg" alt="Politics">
-							<div class="title_hidden">Politics</div>
 						</div>
 						<div class="bio_info bio_i5">
 							<div class="bio_title lng12">    Политика</div>
@@ -278,7 +267,7 @@
 					<div class="container_name lng06">CИНГЛЫ</div>
 					<div class="flex_singles">
 						<button class="svg_circle svg_circle1280 svg_circle_left" id="left">
-				         <div class="nav-img"></div>    
+							<i class="fa-solid fa-angle-left"></i> 
 				      </button> 
 
 						<div class="singles_block">
@@ -298,14 +287,14 @@
 								<img class="singles_img3" src="" alt="">
 								<div class="singles_title singles_title3"></div>
 							</div>
-							<div class="singles_item">
+<!--							<div class="singles_item">
 								<img class="singles_img4" src="" alt="">
 								<div class="singles_title singles_title4"></div>
-							</div>
+							</div>-->
 						</div>
 
 						<button class="svg_circle svg_circle1280 svg_circle_right" id="right">
-				         <div class="nav-img"></div>    
+				         <i class="fa-solid fa-angle-right"></i> 
 				      </button> 
 					</div>
 				</div>
@@ -387,7 +376,22 @@
 		</main>
 
 		<footer>
-		<!--	<div>2022  ALL RIGHTS RESERVED</div> -->
+			<section class="footer">
+				<div class="footer_container">
+					<div class="footer_block">
+						<div class="fooster_start"></div>
+						<div class="footer_2022">2022        ALL RIGHTS RESERVED</div>
+						<div class="footer_icons">
+							<a href="https://www.instagram.com/norimyxxxo/" class="fa-brands fa-instagram" target="blank"></a>
+							<a href="https://vk.com/oxxxymiron" class="fa-brands fa-vk" target="blank"></a>
+							<a href="https://www.youtube.com/c/oxxxymironofficial" class="fa-brands fa-youtube" target="blank"></a>
+							<a href="https://twitter.com/norimyxxxo" class="fa-brands fa-twitter" target="blank"></a>
+							<a href="https://oxxxyshop.com/" class="fa-brands fa-chrome" target="blank"></a>
+						</div>
+						<div class="fooster_end"></div>
+					</div>
+				</div>
+			</section>
 		</footer>
 	</div>
 

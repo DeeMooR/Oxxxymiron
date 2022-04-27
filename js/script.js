@@ -14,8 +14,8 @@ items.forEach(el => el.addEventListener('click', function() {
 }))
 
 // const
-let arrName = ['Fata Morgana', 'Город под подошвой', 'Кто убил Марка', 'Биполярочка', 'Что такое империя', 'Сказка о потерянном времени', 'Мне скучно жить', 'В книге всё было по-другому', 'Earth Burns', 'Горсвет', 'В долгий путь', 'Что такое BEEF', 'Tabasco', 'Ветер перемен', 'HPL', 'Под дождём', 'Дело нескольких минут',];
-let arrSingles = [0,1,2,3,4];
+let arrName = ['Fata Morgana', 'Город под подошвой', 'Кто убил Марка', 'Биполярочка', 'Что такое империя', 'Мне скучно жить', 'Earth Burns', 'Под дождём', 'Что такое BEEF', 'Дело нескольких минут', 'Горсвет', 'В долгий путь', 'Tabasco', 'HPL', 'Ветер перемен', 'В книге всё было по-другому',];
+let arrSingles = [0,1,2,3];
 refreshSingles();
 const audio = new Audio();
 
@@ -23,13 +23,13 @@ const audio = new Audio();
 // обновление синглов
 function refreshSingles() {
 
-  for (i=0; i<5; i++) {
+  for (i=0; i<4; i++) {
 
     let singles_img = document.querySelector('.singles_img' + i);
 	 let singles_title = document.querySelector('.singles_title' + i);
 
     if (singles_img != null) {
-    	console.log(i, arrSingles[i], arrName[arrSingles[i]])
+ //   	console.log(i, arrSingles[i], arrName[arrSingles[i]])
       singles_img.src = 'img/Singles/' + arrName[arrSingles[i]] + '.jpg';
       singles_img.alt = arrName[arrSingles[i]];
       singles_title.innerHTML = arrName[arrSingles[i]];
@@ -55,8 +55,8 @@ playBtns.forEach(el => el.addEventListener('click', function() {
 // влево-вправо 2 кнопки
 const circle = document.querySelectorAll('.svg_circle');
 circle.forEach(el => el.addEventListener('click', function() {
-    if (el.id == 'right') {arrSingles = arrSingles.map(el => (el<16) ? el+1 : 0);}
-    if (el.id == 'left') {arrSingles = arrSingles.map(el => (el>0) ? el-1 : 16);}
+    if (el.id == 'right') {arrSingles = arrSingles.map((ell,i) => (ell<12) ? ell+4 : i )};
+    if (el.id == 'left') {arrSingles = arrSingles.map((el,i) => (el>3) ? el-4 : (i + 12)) }
     refreshSingles();
 }))
 
@@ -85,6 +85,8 @@ const i18Obj = {
 		'lng17': 'In 2016, Oxxxymiron held two big tours: "Takeover tour" and "Back to Europe Tour".<br><br>In October-December 2017, he held a tour of the cities of Russia.<br><br>In August 2018 and 2019 of the year, together with the Booking Machine label, they took part in the Booking Machine Festival concert.<br><br>At the beginning of 2022, Oksimiron is performances were to take place in Moscow and St. Petersburg. But due to the armed conflict in Ukraine, he canceled all concerts. In the spring he held 3 concerts of "RUSSIANS AGAINT WAR" in Istanbul, London and Berlin.',
 		'lng18': 'Oksimiron is active in the opposition. In July-August 2019, the rapper publicly supported a series of protests in the wake of the exclusion of independent candidates for elections to the Moscow City Duma.<br><br>In 2022, he expressed his disagreement with the authorities in Russia and went to rallies against the war in Ukraine.<br><br>For 3 concerts "RAW" collected $195.000 with tickets and donations to help Ukrainians.',
 		'lng19': 'Winner of the "GQ Man of the Year 2012" award in the "Discovery of the Year" nomination.<br><br>Winner in public voting Hip-hop.ru Award:<br>2009 - "Discovery of the Year", "Best Demo Music Track" , "Best MC of the 14th Independent Battle", "Battle Breakthrough", "Best Battle Track", "Best Battle Sparring"<br>2011 - "Best Album", "Best Demo Music Track"<br>2012 - Best Video, Artist of the Year, Event of the Year, Best Mixtape<br>2013 - Best Video, Artist of the Year, Best Mixtape<br><br>Public Vote Winner portal The Flow:<br>2015 - "Best domestic album", "Best Russian-language track", "Best Russian-language artist" <br>2021 - "Album of the year", "Track of the year", "Artist of the year"<br> <br>Award "Chartova Dozen" (2018) in the nomination "Best duet" (together with the Bi-2 group), etc.',
+
+		'lng20': 'Miron Yanovich Fedorov',
 	},
 	'ru' : {
 		'lng01': 'БИОГРАФИЯ',
@@ -108,6 +110,8 @@ const i18Obj = {
 		'lng17': 'В 2016 году Oxxxymiron провел два больших тура: «Takeover tour» и «Back to Europe Tour».<br><br>В октябре-декабре 2017 года провёл тур по городам России.<br><br>В августе 2018 и 2019 года вместе с лейблом Booking Machine поучаствовали в концерте «Booking Machine Festival».<br><br>В начале 2022 года должны были пройти выступления Оксимирона в Москве и Петербурге. Но из-за вооруженного конфликта на Украине он отменил все концерты. Весной провёл 3 концерта «RUSSIANS AGAINT WAR» в Стамбуле, Лондоне и Берлине.',
 		'lng18': 'Оксимирон ведет активную оппозиционную деятельность. В июле-августе 2019 года рэпер публично поддержал серию протестов на волне недопущения независимых кандидатов на выборы в Мосгордуму.<br><br>В 2022 году высказывал своё несогласие с властью в России и выходил на митинги против войны в Украине.<br><br>За 3 концерта «RAW» собрали билетами и донатами 195.000$ на помощь украинцам.',
 		'lng19': 'Обладатель премии «Человек года GQ 2012» в номинации «Открытие года».<br><br>Победитель в общественных голосованиях Hip-hop.ru Award:<br>2009 год - «Открытие года», «Лучший трек демо-музыки», «Лучший МС 14-го независимого баттла», «Прорыв баттла», «Лучший трек баттла», «Лучший спарринг баттла»<br>2011 год - «Лучший альбом», «Лучший трек демо-музыки»<br>2012 год - «Лучшее видео», «Исполнитель года», «Событие года», «Лучший mixtape»<br>2013 год - «Лучшее видео», «Исполнитель года», «Лучший mixtape»<br><br>Победитель в общественных голосованиях портала The Flow:<br>2015 год - «Лучший отечественный альбом», «лучший русскоязычный трек», «лучший русскоязычный артист» <br>2021 год - «Альбом года», «трек года», «артист года»<br><br>Премия «Чартова Дюжина» (2018) в номинации «Лучший дуэт» (вместе с группой Би-2) и др.',
+
+		'lng20': 'Мирон Янович Фёдоров',
 	}
 }
 
